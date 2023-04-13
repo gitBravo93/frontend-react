@@ -2,7 +2,8 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 
-const URI = 'http://localhost:8000/'
+const URI = 'https://backend-node-gold.vercel.app'
+// const URI = 'http://localhost:8000/'
 
 const CompEditBlog = () => {
     const [title, setTitle] = useState('')    
