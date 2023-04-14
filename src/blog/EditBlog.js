@@ -14,17 +14,17 @@ const CompEditBlog = () => {
 
     //procedimiento para actualizar
     const update = async (e) => {
-        e.preventDefault();
-        navigate('/');
-        await axios.put(URI+id, { title: title, content: content, categoria: categoria });
+        e.preventDefault()
+        await axios.put(`${URI}${id}`, { title: title, content: content, categoria: categoria })
+        navigate('/')
     }
-
+    
     useEffect( ()=>{
         getBlogById()
     },[])
 
     const getBlogById = async () => {
-        const res = await axios.get(URI+id)
+        const res = await axios.get(`${URI}${id}`)
         setTitle(res.data.title)
         setContent(res.data.content)
         setCategoria(res.data.categoria)
