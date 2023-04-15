@@ -40,7 +40,8 @@ const CompEditBlog = () => {
                     value={title}
                     onChange={ (e)=> setTitle(e.target.value)}
                     type="text"
-                    className="form-control"                        
+                    className="form-control"       
+                    required                 
                 />
             </div>
             <div className="mb-3">
@@ -50,6 +51,7 @@ const CompEditBlog = () => {
                     onChange={ (e)=> setContent(e.target.value)}
                     type="text"
                     className="form-control"
+                    required
                 />
             </div>     
             <div className="mb-3">
@@ -59,6 +61,7 @@ const CompEditBlog = () => {
                     onChange={ (e)=> setCategoria(e.target.value)}
                     type="text"
                     className="form-control"
+                    required
                 />
             </div>         
             <button type="submit" className="btn btn-primary">Guardar</button>

@@ -29,6 +29,7 @@ const CompCreateBlog = () => {
             onChange={(e) => setTitle(e.target.value)}
             type="text"
             className='form-control'
+            required
           />
         </div>
         <div className='mb-3'>
@@ -38,6 +39,7 @@ const CompCreateBlog = () => {
             onChange={(e) => setContent(e.target.value)}
             type="text"
             className='form-control'
+            required
           />
         </div>
         <div className='mb-3'>
@@ -47,6 +49,7 @@ const CompCreateBlog = () => {
             onChange={(e) => setCategoria(e.target.value)}
             type="text"
             className='form-control'
+            required
           />
         </div>
         <button type='submit' className='btn btn-primary'>Enviar</button>
