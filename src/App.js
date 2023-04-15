@@ -12,7 +12,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App" >
+    <div className="App w-100">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="" />        
       </header>

@@ -27,13 +27,13 @@ const CompShowBlogs = () => {
 	}
 
 	return (
-		<div className='container w-75'>
+		<div className='container p-0'>
 			<div className='row'>
 				<div className='col'>
 					<Link to="/create" className='btn btn-success mt-2 mb-2'>Nuevo Blog</Link>
 				</div>
-				<div style={{ overflow: "auto" }}>
-					<table className='table' >
+				<div style={{overflow:"auto"}}>
+					<table className='table'>
 						<thead className='table-primary'>
 							<tr>
 								<th>Titulo</th>
