@@ -2,7 +2,7 @@ import axios from 'axios'
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
-const URI = 'https://backend-node-app.onrender.com'
+const URI = 'https://backend-node-app.onrender.com/'
 // const URI = 'http://localhost:8000/'
 
 

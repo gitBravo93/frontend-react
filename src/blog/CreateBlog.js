@@ -2,7 +2,7 @@ import axios from 'axios'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
-const URI = 'https://backend-node-app.onrender.com'
+const URI = 'https://backend-node-app.onrender.com/'
 // const URI = 'http://localhost:8000/'
 
 const CompCreateBlog = () => {
