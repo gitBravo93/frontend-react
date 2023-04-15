@@ -27,7 +27,7 @@ const CompShowBlogs = () => {
 	}
 
 	return (
-		<div className='container w-100'>
+		<div className='container w-75'>
 			<div className='row'>
 				<div className='col'>
 					<Link to="/create" className='btn btn-success mt-2 mb-2'>Nuevo Blog</Link>
