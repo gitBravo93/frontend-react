@@ -63,6 +63,7 @@ const CompShowBlogs = () => {
 													<td> {blog.content} </td>
 													<td> {blog.categoria} </td>
 													<td>
+													  <Link to={`/show/${blog.id}`} className='btn btn-info'><i className="fa-solid fa-magnifying-glass"></i></Link>                    
 														<Link to={`/edit/${blog.id}`} className='btn btn-secondary'><i className="fas fa-edit"></i></Link>
 														<button onClick={() => deleteBlog(blog.id)} className='btn btn-danger'><i className="fas fa-trash-alt"></i></button>
 													</td>
