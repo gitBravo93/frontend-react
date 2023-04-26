@@ -6,7 +6,7 @@ const URI = 'https://backend-node-app.onrender.com/'
 // const URI = 'http://localhost:8000/'
 
 
-const CompShowBlogs = () => {
+const CompListBlogs = () => {
 
 	const [blogs, setBlog] = useState([])
 	useEffect(() => {
@@ -62,10 +62,10 @@ const CompShowBlogs = () => {
 													<td> {blog.title} </td>
 													<td> {blog.content} </td>
 													<td> {blog.categoria} </td>
-													<td>
+													<td style={{display:"flex"}}>
 													  <Link to={`/show/${blog.id}`} className='btn btn-info'><i className="fa-solid fa-magnifying-glass"></i></Link>                    
-														<Link to={`/edit/${blog.id}`} className='btn btn-secondary'><i className="fas fa-edit"></i></Link>
-														<button onClick={() => deleteBlog(blog.id)} className='btn btn-danger'><i className="fas fa-trash-alt"></i></button>
+														<Link to={`/edit/${blog.id}`} className='btn btn-success'><i className="fas fa-edit"></i></Link>
+														<Link to={`/eliminar/${blog.id}`} className='btn btn-danger'><i className="fas fa-trash-alt"></i></Link>
 													</td>
 												</tr>
 											))}
@@ -90,4 +90,4 @@ const CompShowBlogs = () => {
 
 }
 
-export default CompShowBlogs
+export default CompListBlogs

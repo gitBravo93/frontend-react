@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useEffect, useCallback, useState } from "react";
 import { useParams } from "react-router-dom";
-import { Container, Row } from 'react-bootstrap';
+import { Card, Container, Row, Button } from 'react-bootstrap';
 
 const URI = 'https://backend-node-app.onrender.com/'
 // const URI = 'http://localhost:8000/'
@@ -41,8 +41,9 @@ const CompShowIdBlog = () => {
 
   return (
     <Container>
-      <Row className='mr-legth' >
-        <h6><b>Título</b></h6>
+      <Row>
+      <Row className='mr-legth mt-4' >
+        <h3 style={{ color: "blue" }}><b>Título</b></h3>
       </Row>
       <Row className='mr-legth mb-3'>
         <div>
@@ -50,7 +51,7 @@ const CompShowIdBlog = () => {
         </div>
       </Row>
       <Row className='mr-legth'>
-        <h6><b>Contenido</b></h6>
+        <h3 style={{ color: "blue" }}><b>Contenido</b></h3>
       </Row>
       <Row className='mr-legth mb-3' >
         <div>
@@ -58,15 +59,15 @@ const CompShowIdBlog = () => {
         </div>
       </Row>
       <Row className='mr-legth'>
-        <h6><b>Categotía</b></h6>
+        <h3 style={{ color: "blue" }}><b>Categotía</b></h3>
       </Row>
       <Row className='mr-legth mb-3' >
         <div>
           <h6>{read.categoria}</h6>
         </div>
       </Row>
+      </Row>
     </Container>
-
   )
 
 }

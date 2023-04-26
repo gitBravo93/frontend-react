@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { Container, Col, Row } from "react-bootstrap";
 import { useNavigate, useParams } from "react-router-dom";
 
 const URI = 'https://backend-node-app.onrender.com/'
@@ -32,10 +33,15 @@ const CompEditBlog = () => {
 
     return (
         <div>
-        <h3 style={{color:"blue"}}>Editar Blog</h3>
+        <h3 style={{color:"blue", marginTop:"25px"}}>Editar Blog #{id}</h3>
+        <Container>
+            <Row>
+            <Col lg="3">
+            </Col >
+            <Col lg="6">
         <form onSubmit={update}>
             <div className="mb-3">
-                <label className="form-label" style={{color:"blue"}}>Titulo</label>
+                <label className="form-label">Titulo</label>
                 <input
                     value={title}
                     onChange={ (e)=> setTitle(e.target.value)}
@@ -45,7 +51,7 @@ const CompEditBlog = () => {
                 />
             </div>
             <div className="mb-3">
-                <label  className="form-label" style={{color:"blue"}}>Contenido</label>
+                <label  className="form-label">Contenido</label>
                 <textarea
                     value={content}
                     onChange={ (e)=> setContent(e.target.value)}
@@ -55,7 +61,7 @@ const CompEditBlog = () => {
                 />
             </div>     
             <div className="mb-3">
-                <label  className="form-label" style={{color:"blue"}}>Categoria</label>
+                <label  className="form-label">Categoria</label>
                 <textarea
                     value={categoria}
                     onChange={ (e)=> setCategoria(e.target.value)}
@@ -66,6 +72,11 @@ const CompEditBlog = () => {
             </div>         
             <button type="submit" className="btn btn-primary">Guardar</button>
         </form>
+        </Col>
+        <Col lg="3">
+        </Col>
+        </Row>
+        </Container>
     </div>
     )
 
