@@ -65,7 +65,7 @@ const CompListBlogs = () => {
 													<td style={{display:"flex"}}>
 													  <Link to={`/show/${blog.id}`} className='btn btn-info'><i className="fa-solid fa-magnifying-glass"></i></Link>                    
 														<Link to={`/edit/${blog.id}`} className='btn btn-success'><i className="fas fa-edit"></i></Link>
-														<Link to={`/eliminar/${blog.id}`} className='btn btn-danger'><i className="fas fa-trash-alt"></i></Link>
+														<Link to={`/eliminar/${blog.id}`} className='btn btn-info'><i className="fas fa-trash-alt"></i></Link>
 													</td>
 												</tr>
 											))}
